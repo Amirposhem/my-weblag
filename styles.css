@@ -1,0 +1,55 @@
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(1.jpg);
+    color: rgb(48, 48, 48);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.animate-text {
+    animation: slideIn 2s ease-out;
+}
+.animate-fade {
+    animation: fadeIn 3s ease-in-out;
+}
+.enter-btn {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: white;
+    color: #0288d1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    font-size:1.5rem;
+}
+.enter-btn:hover {
+    transform: scale(1.1);
+    background: #4caf50;
+    color: white;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
